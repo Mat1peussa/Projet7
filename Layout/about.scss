@@ -1,3 +1,6 @@
+#aboutPage{
+    min-height:100vh;
+}
 a.aPropos.active{
     text-decoration: underline;
 }
@@ -11,34 +14,69 @@ a.aPropos.active{
 }
 
 .dropdown {
-    outline: 1px solid red;
-	color: rgb(232, 9, 9);
+    color: rgb(232, 9, 9);
 	background-color: $secondary-color;
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
 	width: 335px;
-    height: 143px;
+    height: 100%;
+    margin-bottom: 20px;
+    border-radius: 7px;
     > button{
+        font-size: 13px;
+        font-weight: 500;
         color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h1{
+            margin-left: 12px;
+            font-size: 13px 
+        }
+        svg{
+            margin-right: 7px;
+            width: 18.46px;
+            height: 18.46px;
+        }
+    }
+    p{
+        font-size: 12px;
+        margin:15px 5px 50px 10px;
+        line-height: 17px;
+        
     }
 }
 
 .dropdown-toogle-button{
     width: 100%;
+    height: 30px;
     background: $primary-color;
 	border-radius: 3px;
 	font-weight: 600;
 	cursor: pointer;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .dropdown-closed{
     height: 15.2px;
 	width: 335px;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
+    display: flex;
     > button {
+        font-weight: 500;
         color: white;
+        h1{
+            margin-left: 12px;
+            font-size: 13px;
+        }
+        svg{
+            margin-right: 7px;
+            width: 18.46px;
+            height: 18.46px;
+        }
     }
 }
 

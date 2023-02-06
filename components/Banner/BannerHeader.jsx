@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from '../../assets/images/mer.png';
+import Image from '../../assets/images/mer-mobile.png';
 
 export default function Banner (){
     return(
