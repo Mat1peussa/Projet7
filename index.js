@@ -7,6 +7,7 @@ import Home from './pages/Home';
 import APropos from "./pages/APropos";
 import ErrorPage from "./pages/ErrorPages";
 import FicheLogement from "./pages/FicheLogement";
+import logements from './gallery.json'
 import './styles.scss';
 
 
@@ -23,7 +24,17 @@ const router = createBrowserRouter([
       }, 
       {
         path:"/ficheLogement/:id",
-        element: <FicheLogement/>
+        element:<FicheLogement/>,
+        errorElement:<ErrorPage/>,
+        loader:async ({ params }) => {
+          const res = logements.find(index => index.id === params.id)
+          if (!res) {
+            throw new Response("Not Found", { status: 404 });
+          } 
+          return(
+            null
+          )
+        }
       },
       {
         path:"*",

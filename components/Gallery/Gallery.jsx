@@ -1,6 +1,7 @@
 import React from 'react'
 import Card from '../Card/Card'
 import logements from '../../gallery.json'
+//useContext
 
 export default function Gallery() {
     return (

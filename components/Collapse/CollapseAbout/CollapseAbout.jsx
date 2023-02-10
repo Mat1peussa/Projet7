@@ -1,5 +1,5 @@
 import React from 'react';
-import DropDown from '../../DropDown/DropDown';
+import DropDown from '../../DropDown/DDAbout';
 
 export default function CollapseAbout (){
     return(
