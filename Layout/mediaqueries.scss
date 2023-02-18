@@ -176,6 +176,16 @@
             }
             .dropdown-texte{
                 min-height: 150px;
+                p{
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-left: 20px;
+                }
+                li{
+                    font-size: 18px;
+                    line-height: 10px;
+                    margin-left: 20px;
+                }
             }
             
             
@@ -260,11 +270,12 @@
         }
         .stars{
             width: 200px;
-            
+            img{
+                width: 30px ;
+                height: 30px  ;
+            }
         }
-        .stars img{
-            width: 30px;
-        }
+         
         
     }
     
@@ -280,16 +291,7 @@
             
            .dropdown-texte{
                 min-height: 250px;
-                p{
-                    font-size: 18px;
-                    line-height: 24px;
-                    margin-left: 20px;
-                }
-                li{
-                    font-size: 18px;
-                    line-height: 10px;
-                    margin-left: 20px;
-                }
+                
             }
         }
 
