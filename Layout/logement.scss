@@ -1,34 +1,56 @@
 .logements{
     min-height:100vh;
-    .slideshow img{
-        object-fit: cover;
-        height: 255px;
-        width: 100%;
-        border-radius: 10px;
-        
-    }
-    .hidden{
-        display: none;
-    }
-    .visible{
-        display: flex;
-        
-    }
-
-    button{
-        background-color: transparent;
-    }
-    
-    .button-slideshow{
+    .slideshow{
         position: relative;
-        margin: -140px 10px 140px 10px ;
-        display: flex;
-        justify-content: space-between;
-        font-size: 19.8px;
-        path{
-            color: white;
+        height: 255px;
+        margin-bottom: 20px;
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            
+        }
+        .hidden{
+            display: none;
+        }
+        .visible{
+            display: flex;
+            
+        }
+
+        button{
+            background-color: transparent;
         }
         
+        .button-slideshow{
+            position: absolute;
+            top: 50%;
+            margin-top: -10px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 19.8px;
+            width: 100%;
+            path{
+                color: white;
+            }
+            .next{
+                position:absolute;
+                right: 10px;
+            }
+            .prev{
+                position: absolute;
+                left: 10px;
+            }
+        }
+        .slide-count{
+            color: white;
+            font-size: 18px;
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            margin-left: -9px;
+        }
     }
 }
 .rating-host{

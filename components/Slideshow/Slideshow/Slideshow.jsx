@@ -4,18 +4,19 @@ import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
 
 
 export default function Slideshow(props) {
-  console.log(props);
-  
+  const nbSlides = props.pictures.length
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const previousImage = () => {
-    setCurrentIndex(currentIndex === 0 ? props.pictures.length - 1 : currentIndex - 1);
+    setCurrentIndex(currentIndex === 0 ? nbSlides - 1 : currentIndex - 1);
   };
 
   const nextImage = () => {
-    setCurrentIndex(currentIndex === props.pictures.length - 1 ? 0 : currentIndex + 1);
+    setCurrentIndex(currentIndex === nbSlides - 1 ? 0 : currentIndex + 1);
   };
-
+  
+  
   return (
     
     <div className="slideshow">
@@ -23,15 +24,17 @@ export default function Slideshow(props) {
         <img 
           key={index} 
           src={data} 
-          alt=""
+          alt="carroussel de photos"
           className={index === currentIndex ? 'visible' : 'hidden'}
         />
       ))}
       
-      {props.pictures.length > 1 && <div className='button-slideshow'> 
-        <button onClick={previousImage}><FontAwesomeIcon icon={faChevronLeft}/></button>
-        <button onClick={nextImage}><FontAwesomeIcon icon={faChevronRight}/></button> 
+      {nbSlides > 1 && <div className='button-slideshow'> 
+        <button className='prev' onClick={previousImage}><FontAwesomeIcon icon={faChevronLeft}/></button>
+        <button className='next' onClick={nextImage}><FontAwesomeIcon icon={faChevronRight}/></button> 
       </div> } 
+
+      <span className='slide-count'>{currentIndex +1}/{nbSlides}</span>
       
       
     </div>

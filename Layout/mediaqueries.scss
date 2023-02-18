@@ -5,6 +5,10 @@
     .aPropos{
         text-transform: uppercase;
     }
+
+    .logements .slideshow .slide-count{
+        visibility: hidden;
+    }
     
 }
 
@@ -223,6 +227,8 @@
     button.dropdown-toogle-button{
         height: 47px;
     }
+
+    
 
     //page logement
 
