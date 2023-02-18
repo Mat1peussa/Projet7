@@ -9,13 +9,13 @@ export default function DropDown(props){
     return  (
         <>
             <div className='dropdown'>
-                <button className='dropdown-toogle-button' onClick={() => setIsOpen(!isOpen)}>
+                <span className='dropdown-toogle-button' onClick={() => setIsOpen(!isOpen)}>
                     <h1>{props.title}</h1>
                     {isOpen ? <FontAwesomeIcon icon={faChevronUp}/> :<FontAwesomeIcon icon={faChevronDown}/>}
-                </button>
-                {isOpen && <p className='texte'> {props.texte}{props.liste}</p>
-                  }
+                </span>
+                
+                {isOpen && <div className='dropdown-texte'>{props.dataToDisplay}</div>}
             </div>
-        </>
+        </>     
     )
 }

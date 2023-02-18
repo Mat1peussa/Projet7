@@ -7,8 +7,8 @@ export default function Header() {
     <div className="kasa-header">
         <img src={Logo} alt='Logo' className='kasa-logo' />
         <nav className="kasa-header-nav">
-          <NavLink to="/" className='home'>ACCUEIL</NavLink>
-          <NavLink to="/aPropos"className='aPropos'>A PROPOS</NavLink>
+          <NavLink to="/" className='home'>Accueil</NavLink>
+          <NavLink to="/aPropos"className='aPropos'>A Propos</NavLink>
         </nav>
     </div>
   )

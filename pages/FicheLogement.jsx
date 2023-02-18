@@ -1,11 +1,12 @@
 import React from 'react'
-import CollapseAbout from '../components/Collapse/CollapseLogement/CollapseLogements'
-
+import CollapseLogements from '../components/Collapse/CollapseLogement/CollapseLogements'
+import {useLocation} from 'react-router-dom';
 
 export default function FicheLogement() {
+  const location = useLocation();
   return (
-    <>
-      <CollapseAbout/>
-    </>
+    <div className='logements'>
+      <CollapseLogements data={location.state}/>
+    </div>
   )
 }

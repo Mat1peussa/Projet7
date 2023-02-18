@@ -1,0 +1,292 @@
+@media all and (max-width: 768px){
+    .home{
+        text-transform: uppercase;
+    }
+    .aPropos{
+        text-transform: uppercase;
+    }
+    
+}
+
+@media all and (min-width: 768px){
+    .App-sansFooter{
+        margin: 40px 40px 0 40px
+    }
+
+    /*Page Home*/  
+
+    .kasa-header{
+        margin-bottom: 40px;
+        .home{
+            font-size: 24px;
+            margin-right: 40px;
+        }
+        .aPropos{
+            font-size: 24px;
+        }
+    }
+    .mer-mobile{
+        display: none;
+    }
+    .banner .mer-desktop{
+        display: block;
+        width:100%;
+        border-radius:25px;
+        filter: brightness(70%);
+        object-fit: cover;
+    }
+    .banner p.slogan{
+        width: 100%;
+        font-size: 36px;
+        bottom: 40%;
+        left: 1%;
+    
+    }
+
+    .kasa-array-list{
+        background-color: $secondary-color;
+        border-radius: 25px;
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 45%;
+                margin-top: 25px;
+                margin-left: 3.2%;
+                margin-bottom: 0;
+                .kasa-item-cover{
+                    height: 255px;
+                    border-radius: 15px;
+                }
+            }
+        }
+    }
+    
+    // Page d'erreur
+
+    #error-page {
+        min-height:100vh;
+        .body{
+            .errorMessage{
+                h1{
+                    font-size: 288px;
+                }
+                p{
+                    width: 100%;
+                    font-size: 30px;
+                    margin-top: 50px;
+                }
+            }
+            span{
+                font-size: 18px;
+            margin-top: 300px;
+            }
+        }
+    }
+
+    //Page à propos
+    .dropdown {
+        margin-top: 20px;
+        margin-left: 10%;
+        width: 80%;
+        button{
+            h1{
+                font-size: 18px;
+            }
+        }
+        p{
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+    .banner {
+        .mountain-mobile{
+            display: none;
+        }
+        .mountain-desktop{
+            
+            display: block;
+            width:100%;
+            border-radius:25px;
+            filter: brightness(70%);
+            object-fit: cover;
+        }
+    }  
+    
+    //page logement
+
+    .block-informations{
+        display: flex;
+        justify-content: space-between;
+        .title-location-tags{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 80px;
+            
+            p.title{
+                font-size: 24px;
+                margin-bottom: 0;
+            }
+            P.location{
+                font-size: 14px;
+            }
+        }
+    }
+    
+    .rating-host {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        height: 80px;
+        width:150px;
+        
+        .kasa-host{
+            align-items: center;
+            width:150px;
+            margin-bottom: 0;
+            p.name{
+                font-size: 14px;
+            }
+            img.profilPhoto{
+                width: 40px;
+            }
+        }
+        .stars{
+            justify-content: flex-end;
+            .stars img{
+                width: 17px;
+            }
+        }
+    }
+
+    .dropdown-block{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        
+        .dropdown{
+            margin-left: 0;
+            width: 48%;
+            svg{
+                font-size: 20px;
+            }
+            .dropdown-texte{
+                min-height: 150px;
+            }
+            
+            
+        }
+    }
+
+}  
+
+@media all and (min-width: 1280px){
+
+    /*Page Home*/ 
+    .kasa-header{
+        margin-bottom: 40px;
+        .home{
+            font-size: 24px;
+            margin-right: 100px;
+        }
+        .aPropos{
+            font-size: 24px;
+        }
+    }
+
+    .kasa-array-list ul li {
+        width:29%;
+        .kasa-item-cover{
+            width: 100%;
+            height: 340px;
+        }
+
+    }
+
+    
+
+    //Page à propos
+    .dropdown {
+        margin-left: 10%;
+        width: 80%;
+        button{
+            h1{
+                font-size: 24px;
+            }
+        }
+        p{
+            font-size: 24px;
+            line-height: 35px;
+        }
+    }
+
+    button.dropdown-toogle-button{
+        height: 47px;
+    }
+
+    //page logement
+
+    .block-informations{
+        .title-location-tags{
+            height: 100px;
+            p.title{
+                font-size: 36px;
+                margin-bottom: 0;
+            }
+            P.location{
+                font-size: 18px;
+            }
+        }
+    }
+
+    .rating-host {
+        height: 100px;
+        width: 200px;
+        .kasa-host{
+            width:200px;
+            margin-bottom: 0;
+            p.name{
+                font-size: 18px;
+            }
+            img.profilPhoto{
+                width: 64px;
+            }
+        }
+        .stars{
+            width: 200px;
+            
+        }
+        .stars img{
+            width: 30px;
+        }
+        
+    }
+    
+    .dropdown-block{
+        .dropdown{
+            h1{
+                font-size: 18px;
+            }
+            svg{
+                display: block;
+                font-size: medium;
+            }
+            
+           .dropdown-texte{
+                min-height: 250px;
+                p{
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-left: 20px;
+                }
+                li{
+                    font-size: 18px;
+                    line-height: 10px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+    }
+}
+
