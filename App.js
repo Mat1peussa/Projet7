@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
-    <>
+    <div>
       <div className="App">
         <div className='App-sansFooter'>
           <Header/>
@@ -13,7 +13,7 @@ function App() {
         </div>
         <Footer/>
       </div>
-    </>
+    </div>
   );
 }
 

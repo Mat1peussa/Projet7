@@ -9,7 +9,6 @@ export default function ErrorPage() {
   console.error(error);
   const navigate = useNavigate()
   return (
-    <>
       <div className="App">
         <div className='App-sansFooter'>
           <Header/>
@@ -25,7 +24,7 @@ export default function ErrorPage() {
         </div>
         <Footer/>
       </div>
-    </>
+    
     
   )
 }
