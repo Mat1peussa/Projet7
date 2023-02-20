@@ -198,6 +198,7 @@
 
     /*Page Home*/ 
     .kasa-header{
+        
         margin-bottom: 40px;
         .home{
             font-size: 24px;
@@ -208,16 +209,20 @@
         }
     }
 
+    .kasa-logement-list{
+        margin-top: 40px;
+        padding-bottom: 40px;
+    }
+
     .kasa-array-list ul li {
         width:29%;
-        .kasa-item-cover{
+        margin-top: 45px;
+       .kasa-item-cover{
             width: 100%;
             height: 340px;
         }
 
     }
-
-    
 
     //Page à propos
     .dropdown {
@@ -237,8 +242,6 @@
     button.dropdown-toogle-button{
         height: 47px;
     }
-
-    
 
     //page logement
 
@@ -295,6 +298,10 @@
             }
         }
 
+    }
+
+    .footer{
+        margin-top: 40px;
     }
 }
 
