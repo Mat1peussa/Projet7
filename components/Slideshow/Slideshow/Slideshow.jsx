@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronRight,faChevronLeft } from '@fortawesome/free-solid-svg-icons'
+import ChevronRight from './../../../assets/images/chevronRight.png'
+import ChevronLeft from './../../../assets/images/chevronLeft.png'
 
 
 export default function Slideshow(props) {
@@ -30,8 +30,8 @@ export default function Slideshow(props) {
       ))}
       
       {nbSlides > 1 && <div className='button-slideshow'> 
-        <button className='prev' onClick={previousImage}><FontAwesomeIcon icon={faChevronLeft}/></button>
-        <button className='next' onClick={nextImage}><FontAwesomeIcon icon={faChevronRight}/></button> 
+        <button className='prev' onClick={previousImage}><img src={ChevronLeft} alt='chevron gauche'/></button>
+        <button className='next' onClick={nextImage}><img src={ChevronRight} alt='chevron droite'/></button> 
       </div> } 
 
       <span className='slide-count'>{currentIndex +1}/{nbSlides}</span>
